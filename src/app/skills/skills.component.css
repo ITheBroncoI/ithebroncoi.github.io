@@ -1,0 +1,17 @@
+.progress-item {
+  display: flex; /* Coloca las etiquetas y barras en una misma línea */
+  align-items: center; /* Alinea verticalmente al centro */
+  margin-bottom: 0px; /* Espacio entre cada fila */
+}
+
+.label {
+  display: flex; /* Aplica flex para controlar la alineación interna */
+  justify-content: flex-end;
+  flex: 0 0 200px; /* Da un ancho fijo a las etiquetas para que todas ocupen el mismo espacio */
+  margin-right: 10px; /* Espacio entre el texto y la barra de progreso */
+}
+
+.progress-bar-container {
+  flex-grow: 1; /* La barra de progreso tomará todo el espacio disponible */
+}
+
