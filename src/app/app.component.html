@@ -1,8 +1,17 @@
-<div>
-  <b>
-    Ochoa Morales Angel David
-  </b>
-  <p>
-    Matricula: zS22004349
-  </p>
+<div class="flex flex-column p-3 border-round-xl bg-blue-50 gap-1">
+  <div class="flex">
+    <app-header></app-header>
+  </div>
+  <div class="flex flex-row">
+    <div class="flex flex-column w-6">
+        <app-work-experience></app-work-experience>
+        <app-education></app-education>
+    </div>
+    <div class="flex flex-column w-6 md:pl-6">
+      <app-skills></app-skills>
+      <app-archivements></app-archivements>
+      <app-language></app-language>
+      <app-interest></app-interest>
+    </div>
+  </div>
 </div>

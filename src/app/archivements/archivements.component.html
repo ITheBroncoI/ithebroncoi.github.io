@@ -1,0 +1,17 @@
+<div class="flex flex-column">
+  <div class="flex">
+    <p class="font-bold text-xl">Archivements</p>
+  </div>
+  <div *ngFor="let archivement of archivements" class="flex flex-column">
+    <div class="-mb-4">
+      <p class="md:text-base md:font-semibold">
+        {{ archivement.titulo }}
+      </p>
+    </div>
+    <div>
+      <p class="font-medium font-italic text-sm text-blue-500">
+        {{ archivement.fecha }}
+      </p>
+    </div>
+  </div>
+</div>

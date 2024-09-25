@@ -1,0 +1,43 @@
+<div class="flex flex-column">
+  <div>
+    <p class="font-bold text-xl">Work Experience</p>
+  </div>
+  <div class="flex flex-column">
+    <div *ngFor="let work of workExperience">
+      <div class="flex flex-row justify-content-between items-center -mb-4">
+        <p class="md:text-sm font-semibold italic text-blue-400">
+          {{ work.fecha }}
+        </p>
+        <p class="md:text-sm font-semibold italic text-blue-400">
+          {{ work.ubicacion }}
+        </p>
+      </div>
+      <div class="-mb-3">
+        <p class="text-xl font-bold ">
+          {{ work.puesto }}
+        </p>
+      </div>
+      <div class="-mb-3">
+        <p class="md:text-lg font-semibold">
+          {{ work.empresa }}
+        </p>
+      </div>
+      <div class="-mb-4">
+        <p class="md:text-base md:font-bold text-blue-600">
+          Archivements
+        </p>
+      </div>
+      <div *ngFor="let logro of work.logros" class="flex flex-row align-items-center -mb-3 gap-2">
+        <div>
+          <i class="pi pi-circle-fill" style="color: var(--blue-600)"></i>
+        </div>
+        <div>
+          <p class="font-medium">
+            {{ logro.descripcion }}
+          </p>
+        </div>
+      </div>
+      <div class="mb-5"></div>
+    </div>
+  </div>
+</div>

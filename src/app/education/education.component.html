@@ -1,0 +1,22 @@
+<div class="flex flex-column">
+  <div class="flex">
+    <p class="font-bold text-xl">Education</p>
+  </div>
+  <div *ngFor="let education of educationCourses" class="flex flex-column">
+    <div class="md:-mb-4">
+      <p class="md:text-sm font-semibold text-blue-500">
+        {{ education.fecha }}
+      </p>
+    </div>
+    <div class="md:-mb-4">
+      <p class="md:text-lg md:font-bold">
+        {{ education.titulo}}
+      </p>
+    </div>
+    <div>
+      <p class="font-medium font-italic md:text-base">
+        {{ education.institucion }}
+      </p>
+    </div>
+  </div>
+</div>
