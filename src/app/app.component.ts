@@ -6,11 +6,12 @@ import {EducationComponent} from "./education/education.component";
 import {SkillsComponent} from "./skills/skills.component";
 import {ArchivementsComponent} from "./archivements/archivements.component";
 import {LanguageComponent} from "./language/language.component";
+import {InterestComponent} from "./interest/interest.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, WorkExperienceComponent, EducationComponent, SkillsComponent, ArchivementsComponent, LanguageComponent,],
+  imports: [RouterOutlet, HeaderComponent, WorkExperienceComponent, EducationComponent, SkillsComponent, ArchivementsComponent, LanguageComponent, InterestComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
